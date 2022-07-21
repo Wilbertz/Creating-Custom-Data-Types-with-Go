@@ -8,4 +8,5 @@ func main() {
 		"Wilson",
 	)
 	println(p.ID())
+	println(p.FullName())
 }
