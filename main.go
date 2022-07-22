@@ -10,12 +10,13 @@ func main() {
 		"James",
 		"Wilson",
 	)
-	err := p.SetTwitterHandler("@jam wills")
+	err := p.SetTwitterHandler("@jam_wills")
 	fmt.Printf("%T\n", p.TwitterHandler())
 
 	if err != nil {
 		fmt.Printf("An error occured setting twitter handler: %s\n", err.Error())
 	}
 	println(p.TwitterHandler())
+	println(p.TwitterHandler().RedirectUrl())
 	println(p.FullName())
 }
