@@ -17,6 +17,9 @@ type Identifiable interface {
 	ID() string
 }
 
+type Employee struct {
+}
+
 type Person struct {
 	firstName      string
 	lastName       string
