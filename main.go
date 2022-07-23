@@ -18,5 +18,5 @@ func main() {
 	}
 	println(p.TwitterHandler())
 	println(p.TwitterHandler().RedirectUrl())
-	println(p.FullName())
+	println(p.Name.FullName())
 }
