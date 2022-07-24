@@ -17,9 +17,21 @@ func main() {
 	if err != nil {
 		fmt.Printf("An error occured setting twitter handler: %s\n", err.Error())
 	}
-	println(p.TwitterHandler())
-	println(p.TwitterHandler().RedirectUrl())
-	println(p.ID())
-	println(p.Country())
-	println(p.Name.FullName())
+
+	name1 := Name{First: "James", Last: "Wilson"}
+	name2 := Name{First: "James2", Last: "Wilson"}
+
+	if name1 == name2 {
+		println("We match")
+	}
+}
+
+type Name struct {
+	First string
+	Last  string
+}
+
+type OtherName struct {
+	First string
+	Last  string
 }
