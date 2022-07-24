@@ -71,6 +71,8 @@ type Employee struct {
 
 type Person struct {
 	Name
+	first          string
+	last           string
 	twitterHandler TwitterHandler
 	Citizen
 }
