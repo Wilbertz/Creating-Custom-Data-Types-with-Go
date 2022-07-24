@@ -9,6 +9,7 @@ func main() {
 	p := organization.NewPerson(
 		"James",
 		"Wilson",
+		organization.NewSocialSecurityNumber("123-45-6789"),
 	)
 	err := p.SetTwitterHandler("@jam_wills")
 	fmt.Printf("%T\n", p.TwitterHandler())
@@ -18,5 +19,6 @@ func main() {
 	}
 	println(p.TwitterHandler())
 	println(p.TwitterHandler().RedirectUrl())
+	println(p.ID())
 	println(p.Name.FullName())
 }
