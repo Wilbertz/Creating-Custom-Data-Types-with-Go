@@ -18,13 +18,13 @@ func main() {
 		fmt.Printf("An error occured setting twitter handler: %s\n", err.Error())
 	}
 
-	//name1 := Name{First: "James", Last: "Wilson"}
+	name1 := Name{First: "James", Last: "Wilson"}
 	//name2 := Name{First: "James2", Last: "Wilson"}
 
 	ssn := organization.NewSocialSecurityNumber("123-45-6789")
 	eu := organization.NewEuropeanUnionIdentifier("12345", "France")
 
-	if ssn == eu {
+	if name1 == (Name{}) {
 		println("We match")
 	}
 
