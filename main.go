@@ -21,6 +21,9 @@ func main() {
 	name1 := Name{First: "James", Last: "Wilson"}
 	//name2 := Name{First: "James2", Last: "Wilson"}
 
+	portfolio := map[Name][]organization.Person{}
+	portfolio[name1] = []organization.Person{p}
+
 	ssn := organization.NewSocialSecurityNumber("123-45-6789")
 	eu := organization.NewEuropeanUnionIdentifier("12345", "France")
 
