@@ -17,30 +17,4 @@ func main() {
 	if err != nil {
 		fmt.Printf("An error occured setting twitter handler: %s\n", err.Error())
 	}
-
-	name1 := Name{First: "James", Last: "Wilson"}
-	//name2 := Name{First: "James2", Last: "Wilson"}
-
-	portfolio := map[Name][]organization.Person{}
-	portfolio[name1] = []organization.Person{p}
-
-	ssn := organization.NewSocialSecurityNumber("123-45-6789")
-	eu := organization.NewEuropeanUnionIdentifier("12345", "France")
-
-	if name1 == (Name{}) {
-		println("We match")
-	}
-
-	fmt.Printf("%T\n", ssn)
-	fmt.Printf("%T\n", eu)
-}
-
-type Name struct {
-	First string
-	Last  string
-}
-
-type OtherName struct {
-	First string
-	Last  string
 }
