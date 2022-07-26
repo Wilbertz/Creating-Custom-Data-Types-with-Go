@@ -54,6 +54,8 @@ func NewEuropeanUnionIdentifier(id interface{}, country string) Citizen {
 			id:      strconv.Itoa(v),
 			country: country,
 		}
+	case europeanUnionIdentifier:
+		return v
 	default:
 		panic("using an invalid type to initialize EU Identifier")
 	}
